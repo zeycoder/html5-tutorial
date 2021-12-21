@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: mediumpurple;
+        }
+        
+        div{
+            font-size: 1.5em;
+            /*default değerin (16px) 1.5 katına çıkıp 24px oluyor*/
+        }
+       
+        p{
+            font-size: 1.5em;
+            /*div elementinin 1.5 katına çıkıp 36px oluyor */
+            padding: 1.5em;
+            /*
+            padding kendi p elemtimizin font size si neyse eğer 
+            onun 1.5  katına çıkıp 54px oluyor
+            */
+        } 
+        
+ 
+        h1{
+            font-size: 300%;
+        } 
+        
+        /*
+        Responsive units
+        em rem % vw vh        
+        */
+        .vwvh{
+            width: 40vw;
+            height: 10vh;
+            /*
+            vw genişliğin yüzdesi
+            vh yüksekliğin yüzdesi
+            */
+            background: mediumorchid;
+        }
+        .resim{
+            background: url(/1\ bilemezsiniz\ hehe.jfif)center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: mediumaquamarine;
+            align-items: center;
+            padding: 10rem;
+        
+        }
+        .resm{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        .rsm{
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <h1>Başlık 1</h1>
+    </div>
+    <div class="vwvh">
+    </div>
+    <div class="resim">
+        <h1 class="resm">başlık 2</h1>
+        <p class="rsm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>

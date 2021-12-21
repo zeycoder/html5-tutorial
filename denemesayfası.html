@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            border:0;     
+        }
+        #deneme{
+            /*
+            margin-top: 40px;
+            margin-right: 50px;
+            margin-bottom: 30px;
+            margin-left: 60px;
+            şimdi bunları tek satırda nasıl yapılır onu yazıcaz
+            ama sırayla olmalı, sırası ;
+            top right bottom left
+            */
+            margin: 40px 50px 30px 60px ;
+            /*Veya top-bottom , right-left şeklinde de yapabiliriz.
+            margin: 50px 20px ;
+            */
+            /*
+            padding-top: 20px;
+            padding-right: 100px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            şimdi de bunları tek satırda yazalım
+            */
+            padding: 20px 100px 15px 25px;
+            background-color:yellow;
+            border-radius: 30px;
+            
+        }
+        #deneme1{
+            background: violet;
+            width: 50%;
+             
+            margin-left: auto;
+            margin-right: auto;
+            /*
+            Kısa yöntemi
+            margin: 0 auto;
+            */
+            border-radius: 20px;
+            padding:15px 20px;
+            border: 10px red solid;
+        }
+        #orta{
+            margin: auto;
+            width: 12%;
+        }
+        #deneme2{
+            width: 300px;
+            height: 100px;
+            border: 5px red solid;
+            background-color: slateblue;
+            padding: 10px;
+        }
+        #deneme02{
+            width: 300px;
+            height: 100px;
+            border: 5px red solid;
+            background-color: slateblue;
+            padding: 20px;
+        }
+        #deneme3{
+            width: 300px;
+            height: 100px;
+            border: 5px red solid;
+            background-color: slateblue;
+            padding: 10px;
+            box-sizing: border-box
+        }
+        #deneme03{
+            width: 300px;
+            height: 100px;
+            border: 5px red solid;
+            background-color: slateblue;
+            padding: 20px;
+            box-sizing: border-box
+        }
+    </style>
+</head>
+<body style="background-color: mediumpurple;">
+    <div id="deneme">
+        selam
+    </div>
+    <div id="deneme1">
+        <p id="orta">ortalama</p> 
+    </div>
+    <div id="deneme2">
+        padding değişirse kutu boyutları da değişir.
+    </div>
+    <div id="deneme02">
+        padding değişirse kutu boyutları da değişir.
+    </div>
+
+    <div id="deneme3">
+        eğer kutuların boyutları değişmesin istiyorsanız box-sizing: border-box
+    </div>
+    <div id="deneme03">
+        özelliğini kullanın bu sayede kutular aynı kalır oleey. bu özellik padding değerlerini widhtin içine sokar
+    </div>
+</body>
+</html>

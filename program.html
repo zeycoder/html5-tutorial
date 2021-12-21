@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        } 
+        table{
+            width: 75%;
+             margin: 0 auto;
+             font-size: 1.5em;
+            /*
+            veya uzunu da böyle
+            margin-left: auto;
+            margin-right: auto; 
+            */
+        }
+        th,td{
+            padding: 8px;
+
+        }
+        thead tr{
+            background: green;
+            color: greenyellow;
+        }
+        tbody tr{
+            background: mediumorchid;
+            color:pink;
+            text-align: center;
+        }
+        tbody tr:nth-child(even){
+            background: hsl(295, 72%, 46%);
+        }
+        tbody tr:hover{
+            background: darkgrey;
+        }
+
+
+        p:nth-child(2){
+            color: red;
+            /*ikinci çocuk bodynin çocuğu*/
+        }
+        p:first-child{
+            background-color: blue;
+            /*Bu kod bende çalışmıyor
+            aynı şekilde background:first-child de çalışmıyor anlamadım
+            illa background-color yazmam gerekiyormuş
+            */
+        }
+        p:nth-child(4){
+            color: blue;
+        }
+        p:nth-child(odd){
+            color: purple;
+            /* içine odd yazarsak tek sayılı çocuklar (1-3-5) renk değiştirir 
+            eğer (even) yazarsak çift sayılı çocuklar renk değiştirir.
+            */
+        }
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }   
+        ul li:nth-child(2n){
+            color: seagreen;
+        } 
+        ul li:nth-child(2n+1){
+            color: red;
+        }
+        ul li:nth-child(n+4){
+            background: sienna;
+        }
+
+
+
+
+    </style>
+</head>
+<body style="background-color: mediumpurple;">
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsam.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+
+    </ul>
+
+
+    <table> 
+        <thead>
+            <tr>
+                <th>Dersler</th>
+                <th>Günler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Pazartesi</td>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>Salı</td>
+            </tr>
+            <tr>
+                <td>Html</td>
+                <td>Çarşamba</td>
+            </tr>
+            <tr>
+                <td>Css</td>
+                <td>Perşembe</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>Cuma</td>
+            </tr>
+            <tr>
+                <td>Kodsuz</td>
+                <td>Cumartesi</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>

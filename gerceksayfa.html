@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        /*
+        selector{
+            css-özelliği:blue
+        }
+        */
+        /*classları .asdfgh ile, idleri #asdfgh ile, ebebeyn çocuk ilişkisini ise 
+        ebebeynden çocuğa doğru sırayla ve arada bir boşluk bırakarak yazıcaz. Başında
+        bişi olmayacak. Örnekler burada: */
+        
+        h1{
+            color:rgb(255, 0, 0);
+            background:rgba(0, 0, 255, 0.4)
+        }
+        /*bunu ilk başlıkta görmüyor çünkü alttaki kod onu değiştiriyor*/
+        #giris{
+            color: rebeccapurple;
+            background: slateblue;
+        }
+        .gelisme{
+            color: #f4f4f4;
+            background: darkcyan;
+        }
+        /*eğer aynı şeyleri yapmak istiyorsak virgülle ayırarak yapabiliriz bunu örn;
+        h1, #giris, .gelisme {
+            color:bilmem ne falan ;
+        }
+        */
+        #sonuc.son{
+            color: white
+        }
+        /*
+        a{
+            text-decoration: none;
+        }
+        */
+        ul li a{
+            text-decoration: none;
+        }
+        
+        .son span{
+            color: red;
+        }
+        
+        .son .primary{
+            color:black
+        }
+        /* Eğer tüm yazılarımızı seçmek istiyorsak "*"(yıldız) operatörünü kullanmalıyız.  */
+        .bos{
+            color: rgb(255, 210, 177);
+            width: 300px;
+            height: 500px;
+            background-image: url(/1\ bilemezsiniz\ hehe.jfif);
+            background-size: cover;
+        }
+        body{
+            
+            background-image: url(/1\ bilemezsiniz\ hehe.jfif);
+            background-size: 100px;
+            background-repeat: repeat-x;
+            /*background-repeat : no-repeat ise background sol üstte olacak otomatik ama onu sağa almak istiyorsak
+            background-position : right-top yapabiliriz (right-bottom sağ alta yollar) (center top dersek eğer üstte ortalar) */
+            background-attachment: fixed; /*aşağıya indirsek bile sağdaki çubuğu o üstteki resimler sayfada sabit kalacak*/
+            
+            /*
+                iki satırda yazabiliyomuş şu üsttekileri :
+
+                background: url(/1\ bilemezsiniz\ hehe.jfif) repeat-x fixed;
+                background-size: 100px;
+            */           
+        
+        }
+
+    </style>
+
+</head>
+<body style="background-color: mediumpurple;">
+    <h1 id="giris">Başlık 1</h1>
+    <p id="giris">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sapiente consectetur sint suscipit, similique mollitia. Facere illo hic quod expedita.</p>
+    <h1>Başlık 2</h1>
+    <p class="gelisme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta expedita aperiam perferendis eos id in unde consequuntur reiciendis placeat.</p>
+    <p class="son">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptatem atque corporis dolores suscipit nulla ea aliquid qui quidem laudantium.</p>
+    <h1>Başlık 3</h1>
+    <p id="sonuc" class="son">Lorem ipsum <span> dolor</span> sit amet <span class="noprimary">consectetur</span>  adipisicing<span class="primary"> elit</span>. At quae ullam veniam, sequi esse minus.</p>
+    <a href="#">Tıkla</a>
+    <ul>
+        <li>
+            <a href="#">Tıklayabilirsen Tıkla</a>
+        </li>
+    </ul>
+    <hr>
+    <div class="bos">
+        <h2>HELLÖÖÖÖÖ</h2>
+    <p>Nabeeeeer</p>
+
+    </div>
+    
+</body>
+</html>

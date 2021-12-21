@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h1{
+            background: purple;
+            text-transform: uppercase; /* başlıkların hepsinin büyük harf yazılmasını sağlar*/
+        }
+        .h1{
+            text-align: center;
+        }
+        .h2{
+            text-align: right;
+            font-family:monospace;/*yazı fontunu değiştirir.*/
+            font-size: 50px;
+            /* line-height: 100px; */
+            /*bu özellik pek kullanışlı olmadığı için şimdi doğrusunu kullanıcaz
+            font size nin kaç katı olduğunu belirtiyor "em"*/
+            line-height: 2em;
+        
+        }
+        .h3{
+            text-align: left
+            /*default bu zaten*/
+        }
+        #div{
+            width: 400px;
+            height: 400px;
+            border:1px black solid;
+            text-align: center;
+        }
+        #aralık{
+            letter-spacing: 2px;
+            /* harflerin arasının açıyor*/
+            
+        }
+        #ozel{
+            text-decoration: line-through;
+        
+        }
+        #deneme{
+            font-size: 20px;
+            width: 400px;
+            height: 400px;
+            border:1px solid black;
+            font-style: italic;
+            font-weight: bold;
+
+        }
+        div span{
+            font-size: 200%;
+        }
+    </style>
+
+</head>
+<body style="background-color: mediumpurple;"> 
+    <p>HTML de height ve width i sadece block elementler (genişliği tüm sayfayı kaplayan etiketler mesela h1 falan ) üzerinde kullanabiliyoruz inline elementler (genişliği deafult olan etiketler mesela a falan) üzerinde değişiklik yapamayız.</p>
+    <div>Bu bir div'dir. Ve divler bir block elementidir. Onlara istediğimiz gibi genişlik yükseklik verebiliriz.</div>
+    <span>Bu bir span'dir. Ve spanlar bir inline elementidir.</span>
+    <p>Sayfanın üzerinde incele yap incele gör</p>
+    
+    <h1 class="h1">Başlık 1</h1>
+    <h1 class="h2">Başlık 2</h1>
+    <h1 class="h3">Başlık 3</h1>
+
+    <div id="div">
+        <h2>article 1</h2> 
+        <p id="aralık">Lorem <span id="ozel">ipsum</span> dolor , sit amet consectetur adipisicing elit. Voluptatibus, mollitia!</p>
+
+    </div>
+
+    <div id="deneme">
+        <p>Lorem, ipsum dolor <span> sit amet</span> consectetur adipisicing elit. Magnam, ab iure alias labore ipsam vero totam minima minus quos modi.</p>
+    </div>
+    <i class="fas fa-search"></i>
+    <i class="fas fa-compass"></i>
+</body>
+</html>

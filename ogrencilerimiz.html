@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+        a{
+            font-size: 24px;
+        } 
+        a:link{
+            color: green;/*tıklanmadıysa görüneceği renk*/
+        }
+        a:visited{
+            color: black;/*daha önce ziyaret edildiyse görünecek renk*/
+        }
+
+        
+        a:hover{
+            color: red;/*üstüne gelince aldığı renk*/
+        }
+        a:active{
+            color: yellow;/*tam tıklarken aldığı renk*/
+        }
+        input{
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        input:focus
+        {
+            outline: 0;
+            border: 2px solid red;
+        }
+        #face{
+            color: white;
+            font-size: 1.5em;
+            display:inline-block;
+            background: blue;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        #face:hover{
+            background: white;
+            color: blue;
+            border: 1px solid blue;
+        }
+
+        .para1{
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+        .para1::first-line{
+            color: red;
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 50px;
+        }
+        .para1::after{
+            content: "paragraf sonrası";
+            content: url(https://img.flaticon.com/icons/png/512/87/87390.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF)
+        }
+        .para1::before{
+            content: "paragraf öncesi";
+
+        }
+
+    </style>
+</head>
+
+<body style="background-color: mediumpurple;">
+<!-- unordered list = sırasız liste -->
+    <ul>
+        <li>Zeynep Arslan</li>
+        <li type="circle">Sude Karanlık</li>
+        <li type="square">Beyza Erdem</li>
+        <li type="none">Salih Özkara</li>
+        <li>Muhammed Ali Özkaya</li>
+        <li>Hüseyin Efe Şener</li>
+        <ul>
+            <li>2.öğretim</li>
+        </ul>
+        <li>Hüseyin Efe Şener</li>
+    </ul>
+    <hr>
+<!-- ordered list = sıralı liste -->
+    <ol start=8>
+        <li>Hüseyin Efe Şener</li>
+        <li>Hüseyin Efe Şener</li>
+        <li>Hüseyin Efe Şener</li>
+        <li>Hüseyin Efe Şener</li>
+    </ol>
+    <hr>
+    <ol type="A">
+        <li>Hüseyin Efe Şener</li>
+        <li>Hüseyin Efe Şener</li>
+        <li>Hüseyin Efe Şener</li>
+    </ol>
+    <div>
+        <a href="#">Test a link</a>
+        <input type="text" placeholder="Name" >
+    </div>
+    <a id="face" href="#">Facebook</a>
+    <p class="para1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus neque perspiciatis magni, a ut omnis enim adipisci possimus consequuntur iusto aliquid, dolorum doloremque repudiandae? Cumque, aspernatur mollitia distinctio at deleniti dolor accusamus! Voluptas ipsum iure cupiditate illo temporibus quae officia, nemo quo error recusandae molestiae? Eum labore accusamus eos? Earum, eum accusantium assumenda, reprehenderit, quia suscipit magni vel at saepe fugiat obcaecati consequatur velit quisquam! Consequuntur quidem quaerat ea rerum ratione porro atque dolorem itaque, natus corporis, neque distinctio voluptatem, sequi vel omnis! Consequuntur eveniet pariatur alias eligendi tempore dolore cupiditate similique fugit, non, fuga velit atque quas aliquid obcaecati.
+    </p>
+
+</body>
+
+</html>
